@@ -12,53 +12,43 @@ body{
     text-shadow:0em 0.05em 0em black;
   }
   #img-div{
-    margin: 2.5em;
+    margin: 1%;
     text-align: center;
+    padding: 1%;
+    width: 75%;
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width:100%;
-  }
-  #img-div:hover{
-  }
-  #image{
-    max-width: 50%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5em;
-    box-shadow: 0em 0.064em 0em black;
-    padding: 1em;
+    background-color: rgba(255, 255,255, 0.2);
+    box-shadow: 0em 0.064em 0.5em black;
+    border-radius: 0%;
     animation-name: reverse;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
   }
   @keyframes reverse{
-    from{
-      box-shadow: 0em 0.5em 0.5em black;
-    }
-    to{
-      box-shadow: 0em 0.064em 0em black;
-    }
+    
   }
-  #image:hover{
+  #img-div:hover{
     animation-name: image-shadow;
     animation-duration: 250ms;
     animation-fill-mode: forwards;
+    
   }
   @keyframes image-shadow{
     
-    25%{
-      box-shadow: 0em 0.125em 0.125em black;
-    }
-    50%{
-      box-shadow: 0em 0.25em 0.25em black;
-    }
-    100%{
-      box-shadow: 0em 0.5em 0.5em black;
-    }
   }
+  
+  #image{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5em;
+    padding: 1em;
+  }
+  
   #tribute-info{
     margin: 0.3em;
     padding: 1em;
@@ -72,76 +62,22 @@ body{
     background-color: rgba(255,255,255,0.55);
     width:75%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2em;
     box-shadow: 0.1em 0.1em 0.5em black;
     font-size: 1em;
   }
   
-  #tribute-info ul li:nth-child(odd)
-  {
-    margin-right: auto;
-    border-radius: 1em 0em 0em 1em;
-    animation-name: tribute-ul-li-odd;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes tribute-ul-li-odd{
-    from{
-      border-radius:1em 1em 1em 1em;
-    font-size:1.5em;
-    margin-left:auto;
-    margin-right:auto;
-    }
-    to{
-      margin-right:auto;
-    }
-  }
-  #tribute-info ul li:nth-child(even)
-  {
-    margin-left: auto;
-    border-radius:0em 1em 1em 0em;
-    animation-name:tribute-ul-li-even;
-    animation-duration:1000ms;
-  }
-  @keyframes tribute-ul-li-even{
-    from{
-      border-radius:1em 1em 1em 1em;
-    font-size:1.5em;
-    margin-left:auto;
-    margin-right:auto;
-    }
-    to{
-      margin-left:auto;
-    }
-  }
-  #tribute-info ul li:hover{
-    
-    animation-name: tribute-li-hover;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes tribute-li-hover{
-    100%{
-      border-radius:1em 1em 1em 1em;
-    font-size:1.5em;
-    margin-left:auto;
-    margin-right:auto;
-    }
-  }
-  
+
+
   #img-caption{
     margin: 2em;
-    width: 80%;
+    width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  
-  #tribute-link{
-
-    }
   
   .tribute-lin{
     margin: 0.4em;
